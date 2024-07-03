@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+<script>
+    var person={
+        name:"i",
+        family:"M",
+        age:30
+    };
+    function Person(name,family,age){
+        this.name = name;
+        this.family=family;
+        this.age=age;
+        this.fullName=function(){
+            return this.name +" " + this.family;
+        }
+    }
+    var iman=new Person("im","na",30);
+    iman.car="pride";
+    console.log(iman);
+
+    var people=[];
+    people.push(new Person('ima','asd',30));
+    people.push(new Person('sama','aafad',31));
+    people.push(new Person('sasfaf','faf',33));
+    console.log(people);
+    var text='';
+    for(x in people){
+        text+= people[x].name + 
+        " " +people[x].family+
+        "<br/>";
+    }
+    document.getElementById('demo').innerHTML=text;
+</script>
+</html>
