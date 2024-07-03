@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myForm" action="/Iman" method="POST">
+        Name:<input type="text" name="fname"/>
+        <input type="button" value="Submit" onclick="MyFunction()"/>
+        <p id="demo" style="color: red;"></p>
+    </form>
+</body>
+<script>
+    debugger;
+    function MyFunction(){
+        var x,text;
+        x=document.getElementById('fname').value;
+        if(isNaN(x) || x<1 || x> 10){
+            text="input not valid";
+            document.getElementById('demo').innerHTML=text;
+        }else{
+            text="inp ok";
+            document.getElementById('demo').innerHTML=text;
+            document.getElementById('demo').style.color='green';
+        }
+    }
+</script>
+</html>
