@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function sum(x,y){
+        if(y===undefined){
+            y=0;
+        }
+        return x+y;
+    }
+    function newSum(x=1,y=1){
+        return x+y;
+    }
+    var result = newSum(5,6);
+    console.log(result);
+
+    function MyFunction(){
+        for (let i = 0; i < arguments.length; i++) {
+            console.log(arguments[i]);
+            console.log(typeof arguments[i]);
+        }
+    }
+    MyFunction(4,"Iman",true,456);
+
+    function add(){
+        var counter=0;
+        function plus(){
+            counter+=1;
+        }
+        plus();
+        plus();
+        return counter;
+    }
+    console.log(add());
+</script>
+</html>
