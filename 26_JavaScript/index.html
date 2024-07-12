@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Hello Iman</p>
+    <p>Hello Parham</p>
+    <p id="demo"></p>
+    <button onclick="myFunc()">Click</button>
+</body>
+<script>
+    var myColl=document.getElementsByTagName('p');
+    document.getElementById('demo').innerHTML=myColl[0].innerHTML;
+    console.log(myColl.length);
+
+    function myFunc(){
+        var myColl=document.getElementsByTagName('p');
+        for (let i = 0; i < myColl.length; i++) {
+            myColl[i].style.color='red';            
+        }
+    }
+</script>
+</html>
