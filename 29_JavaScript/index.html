@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myFunction()">Try It!</button>
+    <p id="demo"></p>
+</body>
+<script>
+    // function myFunction(){
+    //     if(confirm("Press a button !")){
+    //         txt="you press OK";
+    //     }else{
+    //         txt="cancell";
+    //     }
+    //     document.getElementById('demo').innerHTML=txt;
+    // }
+    function myFunction(){
+        var txt='';
+        var person=prompt('Please enter your name: ','Mahmoud Samnejad');
+        document.getElementById('demo').innerHTML=person;
+    }
+</script>
+</html>
